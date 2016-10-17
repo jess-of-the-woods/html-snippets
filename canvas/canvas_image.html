@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <canvas id="c" width="500" height="500"></canvas>
+      <script>
+        var c = document.querySelector("#c");
+        var ctx = c.getContext("2d");
+
+        // rectangle
+        ctx.fillStyle = "#d8d8d8";
+        ctx.fillRect(23,14,150,175);
+
+        var image = new Image();
+        image.onload = function() {
+          console.log('loaded image');
+          ctx.drawImage(image, 0,0, c.width, c.height );
+        }
+        image.src = '../../../../Pictures/Wellington_landsat_labelled.jpg'
+
+
+      </script>
+  </body>
+</html>

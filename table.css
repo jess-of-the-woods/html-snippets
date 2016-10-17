@@ -1,0 +1,25 @@
+#taable {
+  border-color: black;
+  border-style: solid;
+  margin: 2px;
+}
+
+/*tr {
+  border-color: black;
+  border-style: solid;
+  padding: 3px;
+  margin: 2px;
+}*/
+
+td {
+  border-color: black;
+  border-style: solid; 
+  margin: 2px;
+  padding: 2px;
+  border-collapse: collapse;
+}
+
+.invisible {
+/*  display: none;*/
+  border-color: transparent;
+}
